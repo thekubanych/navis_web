@@ -4,6 +4,7 @@ certifi==2025.10.5
 charset-normalizer==3.4.4
 Django==4.2.25
 bleach==6.0.0
+gunicorn==21.2.0
 
 django-ckeditor==6.7.3
 django-environ==0.12.0
