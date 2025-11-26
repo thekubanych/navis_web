@@ -12,6 +12,7 @@ djangorestframework==3.16.1
 drf-spectacular==0.28.0
 drf-yasg==1.21.11
 generics==7.0.0
+gunicorn==23.0.0
 idna==3.11
 inflection==0.5.1
 jsonschema==4.25.1
