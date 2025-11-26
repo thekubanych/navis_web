@@ -26,7 +26,7 @@ DEBUG = env.bool('DEBUG', default=False)
 
 TELEGRAM_TOKEN = env('TELEGRAM_TOKEN')
 CHAT_ID = env('CHAT_ID')
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thekuba.onrender.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'jazzmin',
