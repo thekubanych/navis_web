@@ -75,10 +75,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'telegram_api.wsgi.application'
 
-# --- Database (Render) ---
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'), conn_max_age=600)
+    'default': dj_database_url.config(ssl_require=False)
 }
+
 
 # --- Static files ---
 STATIC_URL = '/static/'
