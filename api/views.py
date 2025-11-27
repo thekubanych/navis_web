@@ -7,11 +7,11 @@ import requests
 
 from .models import *
 from .serializers import *
-
-from django.http import HttpResponse
-
-def home(request):
-    return HttpResponse("Привет, мир!")
+#
+# from django.http import HttpResponse
+#
+# def home(request):
+#     return HttpResponse("Привет, мир!")
 
 
 TELEGRAM_TOKEN = settings.TELEGRAM_TOKEN
