@@ -70,11 +70,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'telegram_api.wsgi.application'
 DATABASES = {
-    "default": dj_database_url.parse(
-        env("DATABASE_URL"),
-        conn_max_age=600,
-        ssl_require=False  # локальная база, SSL не нужен
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'kubadb',
+        'USER': 'thedex',
+        'PASSWORD': 'kuba1234',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
 
 
