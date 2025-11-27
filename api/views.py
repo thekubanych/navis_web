@@ -8,6 +8,12 @@ import requests
 from .models import *
 from .serializers import *
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Привет, мир!")
+
+
 TELEGRAM_TOKEN = settings.TELEGRAM_TOKEN
 CHAT_ID = settings.CHAT_ID
 
