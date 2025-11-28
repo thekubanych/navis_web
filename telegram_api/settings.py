@@ -24,7 +24,7 @@ TELEGRAM_TOKEN = env('TELEGRAM_TOKEN')
 CHAT_ID = env('CHAT_ID')
 
 # --- Hosts ---
-ALLOWED_HOSTS = ['thekuba.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["thekuba.onrender.com", "localhost", "127.0.0.1"]
 
 # --- Installed apps ---
 INSTALLED_APPS = [
@@ -83,7 +83,7 @@ DATABASES = {
 # --- Static files ---
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # --- Media files ---
 MEDIA_URL = '/media/'
