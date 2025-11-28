@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'api',
     'ckeditor',
-    'ckeditor_uploader',
+    # 'ckeditor_uploader',
 ]
 
 # --- Middleware ---
@@ -137,3 +137,8 @@ USE_TZ = True
 
 # --- Default primary key field type ---
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://thekuba.onrender.com",
+]
